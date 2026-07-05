@@ -13,8 +13,9 @@
 <body>
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="{% url 'home' %}" class="logo">
+            <a href="{% url 'home' %}" class="logo" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
                 <img src="{% static 'images/logo.png' %}" alt="Team Shunte Chai Logo" class="nav-logo">
+                <span class="logo-text">Team Shunte Chai</span>
             </a>
             <div class="nav-links">
                 <a href="{% url 'home' %}" class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a>
@@ -36,7 +37,10 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-info">
-                <img src="{% static 'images/logo.png' %}" alt="Team Shunte Chai Logo" class="footer-logo">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                    <img src="{% static 'images/logo.png' %}" alt="Team Shunte Chai Logo" class="footer-logo" style="margin-bottom: 0;">
+                    <span class="logo-text" style="color: white; font-size: 1.5rem; font-weight: 700;">Team Shunte Chai</span>
+                </div>
                 <p>A safe space for your mind. Empowering youths through accessible mental health support.</p>
             </div>
             <div class="footer-links">

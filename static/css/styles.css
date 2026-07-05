@@ -483,3 +483,5 @@ section {
 }
 
 .nav-links a.active { border-bottom: 2px solid var(--secondary-color); color: var(--secondary-color); font-weight: 600; padding-bottom: 2px; }
+
+.logo-text { font-size: 1.5rem; font-weight: 700; color: var(--primary-color); white-space: nowrap; font-family: 'Inter', sans-serif; }
