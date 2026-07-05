@@ -1,0 +1,25 @@
+{
+    "builds": [
+        {
+            "src": "shunte_chai_project/wsgi.py",
+            "use": "@vercel/python"
+        },
+        {
+            "src": "build_files.sh",
+            "use": "@vercel/static-build",
+            "config": {
+                "distDir": "staticfiles"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/static/(.*)",
+            "dest": "/static/$1"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "shunte_chai_project/wsgi.py"
+        }
+    ]
+}
