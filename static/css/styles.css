@@ -481,3 +481,5 @@ section {
     margin-bottom: 15px;
     display: block;
 }
+
+.nav-links a.active { border-bottom: 2px solid var(--secondary-color); color: var(--secondary-color); font-weight: 600; padding-bottom: 2px; }

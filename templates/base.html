@@ -17,12 +17,12 @@
                 <img src="{% static 'images/logo.png' %}" alt="Team Shunte Chai Logo" class="nav-logo">
             </a>
             <div class="nav-links">
-                <a href="{% url 'home' %}">Home</a>
-                <a href="{% url 'about' %}">About</a>
-                <a href="{% url 'achievements' %}">Achievements</a>
-                <a href="{% url 'resources' %}">Resources</a>
-                <a href="{% url 'team' %}">Team</a>
-                <a href="{% url 'contact' %}">Contact</a>
+                <a href="{% url 'home' %}" class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a>
+                <a href="{% url 'about' %}" class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}">About</a>
+                <a href="{% url 'achievements' %}" class="{% if request.resolver_match.url_name == 'achievements' %}active{% endif %}">Achievements</a>
+                <a href="{% url 'resources' %}" class="{% if request.resolver_match.url_name == 'resources' %}active{% endif %}">Resources</a>
+                <a href="{% url 'team' %}" class="{% if request.resolver_match.url_name == 'team' %}active{% endif %}">Team</a>
+                <a href="{% url 'contact' %}" class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contact</a>
                 <a href="{% url 'contact' %}" class="btn btn-primary">Join Us</a>
             </div>
         </div>
