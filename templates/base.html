@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,21 +12,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="{% url 'home' %}" class="logo" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+            <a href="{% url 'home' %}" class="logo"
+                style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
                 <img src="{% static 'images/logo.png' %}" alt="Team Shunte Chai Logo" class="nav-logo">
                 <span class="logo-text">Team Shunte Chai</span>
             </a>
             <div class="nav-links">
-                <a href="{% url 'home' %}" class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a>
-                <a href="{% url 'about' %}" class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}">About</a>
-                <a href="{% url 'achievements' %}" class="{% if request.resolver_match.url_name == 'achievements' %}active{% endif %}">Achievements</a>
-                <a href="{% url 'resources' %}" class="{% if request.resolver_match.url_name == 'resources' %}active{% endif %}">Resources</a>
-                <a href="{% url 'team' %}" class="{% if request.resolver_match.url_name == 'team' %}active{% endif %}">Team</a>
-                <a href="{% url 'contact' %}" class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contact</a>
-                <a href="{% url 'contact' %}" class="btn btn-primary">Join Us</a>
+                <a href="{% url 'home' %}"
+                    class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a>
+                <a href="{% url 'about' %}"
+                    class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}">About</a>
+                <a href="{% url 'achievements' %}"
+                    class="{% if request.resolver_match.url_name == 'achievements' %}active{% endif %}">Achievements</a>
+                <a href="{% url 'resources' %}"
+                    class="{% if request.resolver_match.url_name == 'resources' %}active{% endif %}">Resources</a>
+                <a href="{% url 'team' %}"
+                    class="{% if request.resolver_match.url_name == 'team' %}active{% endif %}">Team</a>
+                <a href="{% url 'contact' %}"
+                    class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contact</a>
+                <!-- <a href="{% url 'contact' %}" class="btn btn-primary">Join Us</a> -->
             </div>
         </div>
     </nav>
@@ -39,8 +48,10 @@
         <div class="container footer-container">
             <div class="footer-info">
                 <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
-                    <img src="{% static 'images/logo.png' %}" alt="Team Shunte Chai Logo" class="footer-logo" style="margin-bottom: 0;">
-                    <span class="logo-text" style="color: white; font-size: 1.5rem; font-weight: 700;">Team Shunte Chai</span>
+                    <img src="{% static 'images/logo.png' %}" alt="Team Shunte Chai Logo" class="footer-logo"
+                        style="margin-bottom: 0;">
+                    <span class="logo-text" style="color: white; font-size: 1.5rem; font-weight: 700;">Team Shunte
+                        Chai</span>
                 </div>
                 <p>A safe space for your mind. Empowering youths through accessible mental health support.</p>
             </div>
@@ -66,4 +77,5 @@
     <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
     <script src="{% static 'js/script.js' %}"></script>
 </body>
+
 </html>
