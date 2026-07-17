@@ -4,71 +4,51 @@
 
 {% block content %}
 <section class="page-header" style="padding-top: 150px; padding-bottom: 50px; text-align: center; background: linear-gradient(135deg, #0a2c74 0%, #1d7eb8 100%); color: white;">
-    <div class="container">
-        <h1 style="font-size: 3rem; margin-bottom: 20px;">Resources</h1>
-        <p style="font-size: 1.2rem; opacity: 0.9;">Documents and policies for our members and community.</p>
-    </div>
-</section>
-
-<section class="resources-section" style="padding: 80px 0; min-height: 50vh;">
-    <div class="container">
-        
-        <div class="resource-tabs">
-            <div class="tab-headers" style="display: flex; gap: 20px; border-bottom: 2px solid #e2e8f0; margin-bottom: 30px;">
-                <button class="tab-btn active" onclick="openTab(event, 'certificates')" style="background: none; border: none; font-size: 1.2rem; font-weight: 600; color: #0a2c74; padding: 10px 20px; cursor: pointer; border-bottom: 3px solid #1d7eb8; outline: none;">
-                    Event Certificates
-                </button>
-                <button class="tab-btn" onclick="openTab(event, 'policies')" style="background: none; border: none; font-size: 1.2rem; font-weight: 600; color: #4a5568; padding: 10px 20px; cursor: pointer; outline: none;">
-                    Safeguarding Policies
-                </button>
-                <button class="tab-btn" onclick="openTab(event, 'strategy')" style="background: none; border: none; font-size: 1.2rem; font-weight: 600; color: #4a5568; padding: 10px 20px; cursor: pointer; outline: none;">
-                    Wellbeing Strategy
-                </button>
+            <div class="container">
+                <h1 style="font-size: 3rem; margin-bottom: 20px;">Resources</h1>
+                <p style="font-size: 1.2rem; opacity: 0.9;">Documents and policies for our members and community.</p>
             </div>
+        </section>
 
-            <div id="certificates" class="tab-content" style="display: block;">
-                <div class="card" style="text-align: left; padding: 30px;">
-                    <h3 style="color: #0a2c74; margin-bottom: 15px;"><i class="fas fa-certificate" style="color: #1d7eb8; margin-right: 10px;"></i> Event Certificates</h3>
-                    <p style="color: #4a5568; margin-bottom: 20px;">Certificates for recent events and workshops will be available here soon.</p>
-                    <button class="btn btn-secondary btn-sm" disabled>Download Available Soon</button>
+        <section class="resources-section" style="padding: 80px 0; min-height: 50vh;">
+            <div class="container">
+                <div class="resource-tabs">
+                    <div class="tab-headers" style="display: flex; gap: 20px; border-bottom: 2px solid #e2e8f0; margin-bottom: 30px;">
+                        <button class="tab-btn active" onclick="openTab(event, 'certificates')" style="background: none; border: none; font-size: 1.2rem; font-weight: 600; color: #0a2c74; padding: 10px 20px; cursor: pointer; border-bottom: 3px solid #1d7eb8; outline: none;">
+                            Event Certificates
+                        </button>
+                        <button class="tab-btn" onclick="openTab(event, 'policies')" style="background: none; border: none; font-size: 1.2rem; font-weight: 600; color: #4a5568; padding: 10px 20px; cursor: pointer; outline: none;">
+                            Safeguarding Policies
+                        </button>
+                        <button class="tab-btn" onclick="openTab(event, 'strategy')" style="background: none; border: none; font-size: 1.2rem; font-weight: 600; color: #4a5568; padding: 10px 20px; cursor: pointer; outline: none;">
+                            Wellbeing Strategy
+                        </button>
+                    </div>
+
+                    <div id="certificates" class="tab-content" style="display: block;">
+                        <div class="card" style="text-align: left; padding: 30px;">
+                            <h3 style="color: #0a2c74; margin-bottom: 15px;"><i class="fas fa-certificate" style="color: #1d7eb8; margin-right: 10px;"></i> Event Certificates</h3>
+                            <p style="color: #4a5568; margin-bottom: 20px;">Certificates for recent events and workshops will be available here soon.</p>
+                            <button class="btn btn-secondary btn-sm" disabled>Download Available Soon</button>
+                        </div>
+                    </div>
+
+                    <div id="policies" class="tab-content" style="display: none;">
+                        <div class="card" style="text-align: left; padding: 30px;">
+                            <h3 style="color: #0a2c74; margin-bottom: 15px;"><i class="fas fa-shield-alt" style="color: #1d7eb8; margin-right: 10px;"></i> Safeguarding Policies</h3>
+                            <p style="color: #4a5568; margin-bottom: 20px;">Our comprehensive safeguarding policies ensure a safe environment for all participants and volunteers.</p>
+                            <button class="btn btn-secondary btn-sm" disabled>Document Coming Soon</button>
+                        </div>
+                    </div>
+
+                    <div id="strategy" class="tab-content" style="display: none;">
+                        <div class="card" style="text-align: left; padding: 30px;">
+                            <h3 style="color: #0a2c74; margin-bottom: 15px;"><i class="fas fa-heartbeat" style="color: #1d7eb8; margin-right: 10px;"></i> Wellbeing Strategy</h3>
+                            <p style="color: #4a5568; margin-bottom: 20px;">Detailed strategy documents for maintaining mental health and wellbeing among our members.</p>
+                            <button class="btn btn-secondary btn-sm" disabled>Document Coming Soon</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div id="policies" class="tab-content" style="display: none;">
-                <div class="card" style="text-align: left; padding: 30px;">
-                    <h3 style="color: #0a2c74; margin-bottom: 15px;"><i class="fas fa-shield-alt" style="color: #1d7eb8; margin-right: 10px;"></i> Safeguarding Policies</h3>
-                    <p style="color: #4a5568; margin-bottom: 20px;">Our comprehensive safeguarding policies ensure a safe environment for all participants and volunteers.</p>
-                    <button class="btn btn-secondary btn-sm" disabled>Document Coming Soon</button>
-                </div>
-            </div>
-
-            <div id="strategy" class="tab-content" style="display: none;">
-                <div class="card" style="text-align: left; padding: 30px;">
-                    <h3 style="color: #0a2c74; margin-bottom: 15px;"><i class="fas fa-heartbeat" style="color: #1d7eb8; margin-right: 10px;"></i> Wellbeing Strategy</h3>
-                    <p style="color: #4a5568; margin-bottom: 20px;">Detailed strategy documents for maintaining mental health and wellbeing among our members.</p>
-                    <button class="btn btn-secondary btn-sm" disabled>Document Coming Soon</button>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<script>
-function openTab(evt, tabName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tab-content");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tab-btn");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.color = "#4a5568";
-        tablinks[i].style.borderBottom = "none";
-    }
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.style.color = "#0a2c74";
-    evt.currentTarget.style.borderBottom = "3px solid #1d7eb8";
-}
-</script>
+        </section>
 {% endblock %}

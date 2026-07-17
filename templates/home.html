@@ -5,17 +5,23 @@
 {% block content %}
 <!-- Hero Section -->
 <section id="hero" class="hero">
-    <div class="container hero-container">
-        <div class="hero-content">
-            <h1 class="hero-title">Team Shunte Chai</h1>
-            <p class="hero-tagline accent">Empowering minds, one conversation at a time.</p>
-            <p class="hero-subtitle">
-                A safe space for your mind. We provide accessible mental health services, counseling, and support designed specifically for youths. You are not alone on your journey to healing.
-            </p>
-            <div class="hero-buttons">
-                <a href="{% url 'contact' %}" class="btn btn-primary">Reach Out Now</a>
-                <a href="{% url 'about' %}" class="btn btn-secondary">Learn More</a>
-            </div>
+    <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+    <div class="container hero-content">
+        <h1 class="hero-title">
+            <span class="title-line">Creating Safe Spaces</span>
+            <span class="title-line">For Mental Health</span>
+            <span class="title-line accent-text">Conversations</span>
+        </h1>
+        <p class="hero-subtitle">
+            A youth-led initiative in Bangladesh dedicated to breaking mental health stigma and fostering meaningful human connections through awareness, discussion, and peer support.
+        </p>
+        <div class="hero-cta">
+            <a href="{% url 'contact' %}" class="btn btn-primary">Get Involved</a>
+            <a href="{% url 'about' %}" class="btn btn-secondary">Learn More</a>
         </div>
     </div>
 </section>

@@ -4,70 +4,68 @@
 
 {% block content %}
 <section class="page-header" style="padding-top: 150px; padding-bottom: 50px; text-align: center; background: linear-gradient(135deg, #0a2c74 0%, #1d7eb8 100%); color: white;">
-    <div class="container">
-        <h1 style="font-size: 3rem; margin-bottom: 20px;">Contact Us</h1>
-        <p style="font-size: 1.2rem; opacity: 0.9;">We are here to listen. Reach out to us anytime.</p>
-    </div>
-</section>
+            <div class="container">
+                <h1 style="font-size: 3rem; margin-bottom: 20px;">Contact Us</h1>
+                <p style="font-size: 1.2rem; opacity: 0.9;">We are here to listen. Reach out to us anytime.</p>
+            </div>
+        </section>
 
-<section class="contact-section" style="padding: 80px 0;">
-    <div class="container">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
-            
-            <div class="contact-info">
-                <h2 style="color: #0a2c74; margin-bottom: 20px;">Get in Touch</h2>
-                <p style="color: #4a5568; margin-bottom: 30px; font-size: 1.1rem;">Whether you need support, want to volunteer, or have a general inquiry, our team is ready to help.</p>
-                
-                <div style="margin-bottom: 20px; display: flex; align-items: center;">
-                    <div style="width: 50px; height: 50px; background: rgba(29, 126, 184, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
-                        <i class="fas fa-map-marker-alt" style="color: #1d7eb8; font-size: 1.2rem;"></i>
-                    </div>
-                    <div>
-                        <h4 style="color: #0a2c74; margin-bottom: 5px;">Location</h4>
-                        <p style="color: #4a5568; margin: 0;">Dhaka, Bangladesh</p>
-                    </div>
-                </div>
+        <section class="contact-section" style="padding: 80px 0;">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+                    <div class="contact-info">
+                        <h2 style="color: #0a2c74; margin-bottom: 20px;">Get in Touch</h2>
+                        <p style="color: #4a5568; margin-bottom: 30px; font-size: 1.1rem;">Whether you need support, want to volunteer, or have a general inquiry, our team is ready to help.</p>
+                        
+                        <div style="margin-bottom: 20px; display: flex; align-items: center;">
+                            <div style="width: 50px; height: 50px; background: rgba(29, 126, 184, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
+                                <i class="fas fa-map-marker-alt" style="color: #1d7eb8; font-size: 1.2rem;"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: #0a2c74; margin-bottom: 5px;">Location</h4>
+                                <p style="color: #4a5568; margin: 0;">Dhaka, Bangladesh</p>
+                            </div>
+                        </div>
 
-                <div style="margin-bottom: 20px; display: flex; align-items: center;">
-                    <div style="width: 50px; height: 50px; background: rgba(29, 126, 184, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
-                        <i class="fas fa-envelope" style="color: #1d7eb8; font-size: 1.2rem;"></i>
+                        <div style="margin-bottom: 20px; display: flex; align-items: center;">
+                            <div style="width: 50px; height: 50px; background: rgba(29, 126, 184, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
+                                <i class="fas fa-envelope" style="color: #1d7eb8; font-size: 1.2rem;"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: #0a2c74; margin-bottom: 5px;">Email Address</h4>
+                                <p style="color: #4a5568; margin: 0;">teamshuntechai@gmail.com</p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h4 style="color: #0a2c74; margin-bottom: 5px;">Email Address</h4>
-                        <p style="color: #4a5568; margin: 0;">teamshuntechai@gmail.com</p>
+
+                    <div class="card contact-form-card" style="padding: 40px;">
+                        <form action="#" method="POST" class="contact-form">
+                            {% csrf_token %}
+                            <div style="margin-bottom: 20px;">
+                                <label for="name" style="display: block; margin-bottom: 8px; color: #0a2c74; font-weight: 600;">Your Name</label>
+                                <input type="text" id="name" name="name" required style="width: 100%; padding: 12px 15px; border: 1px solid #cbd5e0; border-radius: 8px; outline: none; font-family: 'Inter', sans-serif;">
+                            </div>
+                            <div style="margin-bottom: 20px;">
+                                <label for="email" style="display: block; margin-bottom: 8px; color: #0a2c74; font-weight: 600;">Email Address</label>
+                                <input type="email" id="email" name="email" required style="width: 100%; padding: 12px 15px; border: 1px solid #cbd5e0; border-radius: 8px; outline: none; font-family: 'Inter', sans-serif;">
+                            </div>
+                            <div style="margin-bottom: 20px;">
+                                <label for="message" style="display: block; margin-bottom: 8px; color: #0a2c74; font-weight: 600;">Your Message</label>
+                                <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 12px 15px; border: 1px solid #cbd5e0; border-radius: 8px; outline: none; font-family: 'Inter', sans-serif; resize: vertical;"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%; border: none;">Send Message</button>
+                        </form>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="card contact-form-card" style="padding: 40px;">
-                <form action="#" method="POST" class="contact-form">
-                    {% csrf_token %}
-                    <div style="margin-bottom: 20px;">
-                        <label for="name" style="display: block; margin-bottom: 8px; color: #0a2c74; font-weight: 600;">Your Name</label>
-                        <input type="text" id="name" name="name" required style="width: 100%; padding: 12px 15px; border: 1px solid #cbd5e0; border-radius: 8px; outline: none; font-family: 'Inter', sans-serif;">
-                    </div>
-                    <div style="margin-bottom: 20px;">
-                        <label for="email" style="display: block; margin-bottom: 8px; color: #0a2c74; font-weight: 600;">Email Address</label>
-                        <input type="email" id="email" name="email" required style="width: 100%; padding: 12px 15px; border: 1px solid #cbd5e0; border-radius: 8px; outline: none; font-family: 'Inter', sans-serif;">
-                    </div>
-                    <div style="margin-bottom: 20px;">
-                        <label for="message" style="display: block; margin-bottom: 8px; color: #0a2c74; font-weight: 600;">Your Message</label>
-                        <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 12px 15px; border: 1px solid #cbd5e0; border-radius: 8px; outline: none; font-family: 'Inter', sans-serif; resize: vertical;"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%; border: none;">Send Message</button>
-                </form>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- Mobile responsiveness for the grid -->
-<style>
-@media (max-width: 768px) {
-    .contact-section .container > div {
-        grid-template-columns: 1fr !important;
-    }
-}
-</style>
+        <!-- Mobile responsiveness for the grid -->
+        <style>
+        @media (max-width: 768px) {
+            .contact-section .container > div {
+                grid-template-columns: 1fr !important;
+            }
+        }
+        </style>
 {% endblock %}
